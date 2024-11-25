@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/palmeiras.ico" type="image/x-icon">
+    <title>resumo de todas as aulas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="titulo">RESUMO DE TODAS AS AULAS EM UM ÚNICO ARQUIVO.</h1>
+    <p>🚨é bom que veja os códigos no vscode, ou no inspecionar do chrome apertando ctrl+shift+i🚨</p>
+    <pre>
+    <a href="#a1">aula 1</a>
+    <a href="#a2">aula 2</a>
+    <a href="#a3">aula 3</a>
+    <a href="#a4">aula 4</a>
+    <a href="#a6">aula 6</a>
+    <a href="#a7">aula 7</a>
+    <a href="#a8">aula 8</a>
+    <a href="#a9">aula 9</a>
+    <a href="#a10">aula 10</a>
+    </pre>
+    <hr>
+    <h1 class="aula">
+        <a id="a1">aula 1</a>
+    </h1>
+    <h1>olá, mundo</h1>
+    <p>esse é o meu primeiro (ou quase) documento HTML</p>
+    <hr>
+
+    <h1 class="aula">
+        <a id="a2">aula 2</a>
+    </h1>
+    <h1>parágrafos e quebra de linhas</h1>
+    <p> você pode escrever
+        um parágrafo de 
+        qualquer jeito, 
+        basta colocar tudo
+        no meio do par de tags
+        &lt;p&gt; e &lt;/p&gt;
+    </p>
+    <p> para pode quebrar uma linha, basta colocar <br> a tag &lt;br&gt; </p>
+    <hr>
+
+    <h1 class="aula">aula 3</h1>
+    <h1>testando carga de imagens</h1>
+    <p>abaixo você vai ver uma imagem que está na mesma pasta</p>
+    <img src="imagens/logo-html-alterado.png" alt="logo html5">
+    <p>agora vai ser css</p>
+    <img src="imagens/logo-css-alterada.png" alt="logo css3">
+    <p>também podemos carregar imagens externas</p>
+    <img src="https://a.thumbs.redditmedia.com/zDOFJTXd6fmlD58VDGypiV94Leflz11woxmgbGY6p_4.png" alt="logo js">
+    <hr>
+    <h1 class="aula">aula 4</h1>
+    <p>a aula 4 foi apenas sobre como colocar o favicon (imagem que fica no topo, ao lado do nome do site) <br>
+    para adicionar é bem simples:
+    <pre><code>
+        ...
+        &lt;link rel="shortcut icon" href="palmeiras2.ico" type="image/x-icon"&gt;
+        &lt;title&gt;teste de favicon&lt;/title&gt;
+        &lt;/head&gt;
+        ...
+    </code></pre>
+    ps: o arquivo tem que estar em formato <strong>".icon"</strong>
+    </p>
+    <hr>
+
+    <h1 class="aula">
+        <a id="a6">aula 6 (não teve algo pra escrever na 5ª)</a>
+    </h1>
+    <p>na 6ª, foi apenas sobre hierarquia de títulos: <br>
+        &lt;h1&gt; > &lt;h2&gt; > &lt;h3&gt;... > &lt;h6&gt;.
+    </p>
+    <hr>
+
+    <h1 class="aula">aula 7</h1>
+    <blockquote>
+        <p>html5 é focado em semânticas, não em formas (ficou para css)</p>
+        <p>não use tags <abbr title="é feio">obsoletas</abbr></p>
+    </blockquote>
+    <hr>
+
+    <h1 class="aula">aula 8</h1>
+    <h1>principais formatações</h1>
+    <p><strong><em>*priorize as &lt;tags&gt; semânticas</em></strong></p>
+    <h2>negrito / destaque</h2>
+    <p>nessa frase <b>em negrito</b> foi usada a tag &lt;b&gt; (não semântica).</p>
+    <p>agora nesta, o <strong>negrito</strong> foi usado com a tag &lt;strong&gt; (semântica).</p>
+    <h2>itálico / ênfase</h2>
+    <p>nessa frase, temos um <i>termo em itálico</i> usando a tag &lt;i&gt; (não semântica.)</p>
+    <p>e já nesta, foi usado um <em>termo em ênfase</em> usando a tag &lt;em&gt; (semântica).</p>
+    <h2>texto marcado</h2>
+    <p>podemos criar também <mark>um texto marcado</mark> usando a tag &lt;mark&gt;</p>
+    <p>é possível alterar a cor do <mark style="background-color: limegreen;">texto marcado</mark> apenas com css, dessa forma: <br> <code> &lt;mark style="background-color: limegreen;"&gt;texto marcado&lt;/mark&gt;</code><br><br>
+    ou criando a tag &lt;style&gt; abaixo de &lt;title&gt;, ficando assim: 
+    <pre><code>
+    &lt;title&gt;&lt;/title&gt; 
+    &lt;style&gt;
+        mark{
+            background-color: limegreen
+            }   
+    &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    ...
+    </code></pre>
+    </p> 
+    <h2>texto grande e pequeno</h2>
+    <p>estamos criando um <big>texto grande</big> usando a tag &lt;big&gt; (tag obsoleta, não use), e um <small>texto pequeno</small> nesse paragráfago usando a tag &lt;small&gt;</p>
+    <h2>texto deletado</h2>
+    <p>podemos marcar um <del>texto excluído</del> que pode ser lido, mas não considerado. usando a tag &lt;del&gt; </p>
+    <h2>texto inserido</h2>
+    <p>podemos <ins>marcar um texto</ins> como inserido para dar ênfase e indicar que foi adicionado depois, usando a tag &lt;ins&gt; (a tag &lt;u&gt; está obsoleta).</p>
+    <h2>texto sobrescrito</h2>
+    <p>para  inserir coisas do tipo x<sup>20</sup>+3, usando a tag &lt;ins&gt;.</p>
+    <h2>texto subescrito</h2>
+    <p> para inserir coisas do tipo H<sub>2</sub>O, usando a tag &lt;sub&gt;.</p>
+    <h1>Outras formatações</h1>
+    <h2>código-fonte</h2>
+    <p>a tag &lt;code&gt; deixa assim: <code>com formato de código</code></p>
+    <p>a tag &lt;pre&gt; deixa a formatação do código da mesma forma escrita aqui no vscode, com as mesmas quebras de linhas (usei na aula 8), ex:
+        <pre><code>
+            if number % 2 == 0:
+                print ('o número é par')
+            else:
+        </code></pre>
+    </p>
+    <h2>citações</h2>
+    <p>a tag &lt;q&gt; é usada para citações.<br> ex: como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
+    <h2>citações completas</h2>
+    <p>usando a tag &lt;blockquote&gt;<br>segundo alguém, de algum lugar:</p>
+    <blockquote>daqui pra frente é só pra trás</blockquote>
+    <h2>abreviações</h2>
+    <p>usando a tag &lt;abbr&gt;, é possível "colocar" as palavras completas em abreviações, ex (passe o mouse em cima):<br> 
+    estusando <abbr title="hypertext markup">HTML</abbr> e <abbr title="cascading style sheets">CSS</abbr>.
+    </p>
+    <h2>texto invertido (inútil)</h2>
+    <p>use a tag <code>&lt;bdo dir="rtl"&gt;frase aqui&lt;/bdo&gt;</code> para inverter da direita para esquerda. <bdo dir="rtl">programar é muito daora</bdo>
+    </p>
+    <hr>
+
+    <h1 class="aula">aula 9</h1>
+    <h1>trabalhando com listas</h1>
+    <p>obs: a tag &lt;li&gt; precisa estar no meio das tags das listas, ex:<pre><code>
+    &lt;ol&gt;
+    &lt;li&gt;acordar&lt;/li&gt;
+    &lt;li&gt;levantar&lt;/li&gt;
+    &lt;/ol&gt;
+        </code></pre></p>
+    <h2>listas ordenadas</h2>
+    <p>listas em sequência, que seguem uma ordem. usam a tag &lt;ol&gt;</p>
+    <ol type="1" start=""> <!--1 A a i I-->
+        <li>acordar</li>
+        <li>levantar</li>
+        <li>comer</li>
+        <li>deitar</li>
+        <li>dormir</li>
+    </ol>
+    <h2>listas não ordenadas</h2>
+    <p>listas sem sequência, não seguem uma ordem específica. usam a tag &lt;ul&gt;</p>
+    <ul type="disc"> <!--dic circle square-->
+        <li>pão</li>
+        <li>queijo</li>
+        <li>presunto</li>
+        <li>tomate</li>
+        <li>toscana assada na manteiga</li>
+    </ul>
+    <h2>juntando listas</h2>
+    <h3>top gym</h3>
+    <ol>
+        <li>top exercícios peito</li>
+        <ol type="i">
+            <li>supino</li>
+            <li>supino</li>
+            <li>supino</li>
+        </ol>
+        <li>top exercícios costa</li>
+        <ol type="i">
+            <li>remada alta</li>
+            <li>remada alta</li>
+            <li>remada alta</li>
+        </ol>
+    </ol>
+    <h3>top game</h3>
+    <ol type="1">
+        <li>playstation 2</li>
+        <ul>
+            <li>gta sa</li>
+            <li>bully</li>
+            <li>gran turismo v</li>
+        </ul>
+        <li>mobile</li>
+        <ul>
+            <li>subway surf</li>
+            <li>minecraft</li>
+            <li>mini militia</li>
+        </ul>
+    </ol>
+    <h2>lista de definição</h2>
+    <p>primeiro o termo, usando a tag &lt;dt&gt;. e depois a descrição com a tag &lt;dd&gt;. ex:
+<pre><code>
+    &lt;dt&gt;HTML&lt;\dt&gt;
+    &lt;dd&gt;linguaguem de marcação para criação de conteúdo de um site&lt;\dd&gt;
+</code></pre>
+    na prática, ficaria assim:
+    <dt>CSS</dt>
+    <dd>linguagem de marcação para a criação de design de um site.</dd>
+    </p>
+    <hr>
+
+    <h1 class="aula">aula 10</h1>
+    <h1>usando links externos</h1>
+    <p>você pode acessar o meu <a href="https://github.com/garciabertoldo" target="_blank" rel="external">perfil público no github</a></p>
+    <p><code>você pode acessar o meu &lt;a href="https://github.com/garciabertoldo" target="_blank" rel="external"&gt;perfil público no github&lt;\a&gt;</code><br> só de usar a tag &lt;a&gt;, ele já cria um link. mas caso queira que o link seja aberto em uma nova aba, adicione <code>target="_blank" rel="external"</code> após a url, como mostrado acima. </p>
+
+    <h1>usando links internos</h1>
+    <p>essa é a primeira página do site. se você quiser, também pode acessar a minha <a href="pag2.html" rel="next">segunda página</a> </p>
+    <p>e este é o link da minha <a href="noticias/pag3.html">terceira página</a></p>
+
+    <h1>links para download</h1>
+    <ul>
+        <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">baixar livro em pdf</a></li>
+        <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">baixar livro em pdf (o mesmo)</a></li>
+    </ul>
+    <p>(coloquei em formato de lista só para mostrar que posso juntar)</p>
+    <hr>
+
+    <h1 class="aula">aula 11</h1>
+    <h1>imagem dinâmica</h1>
+    <p>tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/fotop.png" type="image/png">
+        <source media="(max-width: 1060px)" srcset="imagens/fotom.png" type="image/png">
+        <img src="imagens/fotog.png" alt="foto grande">
+    </picture>
+    <h1>reproduzindo áudio</h1>
+    <p>vamos aprender a reproduzir áudio em html5 </p>
+    <p>alguns outros formatos de áudio: <strong>MP3 WAV OGG</strong></p>
+
+    <audio preload="metadata" controls loop> <!--todos esses formatos são mp3, considere apenas como exemplo-->
+        <source src="midia/are-you-sleeping.mp3" type="audio/mpeg">
+        <source src="midia/are-you-sleeping.mp3" type="audio/ogg">
+        <source src="midia/are-you-sleeping.mp3" type="audio/wav">
+    </audio>
+    <p>formatos <strong>WAV</strong> costumam pesar muito, então sempre prefira usar <strong>MP3</strong> e <strong>OGG</strong></p>
+    <hr>
+
+    <h1 class="aula">aula 12</h1>
+    <h1>inserindo vídeos hospedados localmente</h1>
+    <p>este vídeo está hospedado no meu próprio servidor</p>
+    <video width="500" poster="imagens/limoes-capa.png" controls>
+        <source src="midia/video-limao.m4v" type="video/mp4">
+        <source src="midia/video-limao.webm" type="video/webm">
+        <source src="midia/video-limao.mp4" type="video/mp4">
+        <source src="midia/video-limao.ogv" type="video/ogg">
+        <p>seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+    <p>os formatos mais usados são <strong>MP4/M4V</strong> e <strong>WEBM</strong><br>
+    o formato .ogv não é muito usado e é mais pesado que os outros, então sempre coloque como última opção dentro do <code>&lt;source&gt;</code>.</p>
+    <h1>inserindo vídeos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/y7o6t15_5XE?si=-304hvJoUconbn3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+    <h1>inserindo vídeos do vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/156528693?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Moncho Massé - Reel 2016"></iframe>
+    <hr>
+
+    <h1 class="aula">aula 13 a 15</h1>
+    <p>fala sobre os meios de inserir o css no html, não use as folhas de estilos na própria linha que deseje alterar, FICA FEIO. <br> <br>
+    sempre crie uma tag <code>&lt;style&gt;</code> abaixo abaixo do <code>&lt;título&gt;</code> para arquivos de só uma página. <br> <br>
+    agora para arquivos com mais de uma página, sempre priorize fazer dessa forma: <br><img src="imagens/exemplo-stylle-1.PNG" alt="x"> <br>
+    desse jeito, poderá fazer várias alterações de várias páginas em uma única página .css 
+    </p>
+    <hr>
+    <h1 class="aula">aula 17</h1>
+
+    <img src="imagens/exemplo-fontes-1.PNG" alt="">
+    <br> <br>
+    como alinhar textos: <br>
+    <img src="imagens/exemplo-fontes-2.PNG" alt="">
+    
+</body>
+</html>
