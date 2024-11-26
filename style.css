@@ -1,11 +1,21 @@
 #titulo {
-    background-color: brown;
-    color: aliceblue;
+    background-color: rgb(172, 0, 0);
+    color: azure;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
     padding-top: 10px;
 }
+
+.modulos{
+    height: 50px;
+    background-color: rgb(172, 0, 0);
+    color: azure;
+    padding: 20px;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 
 .aula {
     background-color: rgb(238, 53, 53);
