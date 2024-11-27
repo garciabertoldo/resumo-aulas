@@ -1,10 +1,7 @@
 #titulo {
     background-color: rgb(172, 0, 0);
     color: azure;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding: 10px;
 }
 
 #container {
